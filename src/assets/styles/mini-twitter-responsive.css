@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    /* Apply responsive styles for devices with a maximum width of 768px */
+    .app {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mt-sidemenu {
+            width: 60px;
+            border-right: solid rgb(207, 217, 222) 1px;
+            padding: 0px;
+            height: 100vh;
+            padding-left: 10px;
+            float: left;
+            overflow: hidden;
+        }
+.mt-userposts {
+    width: 60%;
+}
+}

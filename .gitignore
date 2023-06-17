@@ -1,0 +1,24 @@
+# Dependency directories
+/node_modules
+
+# Build output
+/build
+/dist
+
+# Environment variables
+.env
+.env.local
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Compiled output
+*.log
+*.gz
+
+# Cache and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store

@@ -1,0 +1,487 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    overflow-y: hidden;
+
+    padding:0px
+}
+
+.mt-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mt-loginscreen {
+    width: 47%;
+    background-color:white;
+    text-align: center;
+    height: 620px;
+    border-radius: 16px;
+}
+
+.mt-loginscreen input{
+    width: 44%;
+    color: black;
+    height: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: solid rgb(207, 217, 222) 1px;
+}
+
+.mt-loginscreen button{
+    width: 51%;
+    color: rgb(207, 217, 222);
+    padding: 6px;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 40px;
+    border: solid rgb(207, 217, 222) 1px;
+    background-color: black;
+    margin-top: 20px;
+}
+#forgot-password{
+    background-color: white;
+    color: #000;
+}
+.mt-loginscreen img{
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+.mt-loginscreen p{
+    margin-top: 70px;
+}
+.mt-loginscreen h1{
+    font-size: 28px;
+    color: #1f1f1f;
+}
+
+.mt-sidemenu{
+    width: 270px;
+    border-right: solid rgb(207, 217, 222) 1px;
+    padding: 0px;
+    height: 100vh;
+    padding-left: 10px;
+    float: left;
+}
+.mt-sidemenu-items{
+    padding: 20px;
+    margin-top: -30px;
+}
+.mt-sidemenu img{
+    width: 80px;
+    margin-top: -10px;
+}
+
+.mt-sidemenu-item{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    padding: 0px;
+    margin-top: -10px;
+
+}
+.mt-sidemenu-item img{
+    width: 26px;
+    float: left;
+}
+.mt-sidemenu-item p {
+   font-size: 20px;
+   float: left;
+   margin-top: 12px;
+   margin-left: 16px;
+}
+
+.mt-1{
+    font-weight: 700;
+}
+.mt-11 p{
+    background-color: rgb(29, 155, 240);
+    padding: 12px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: -10px;
+    border-radius: 100px;
+}
+
+.mt-12{
+    width: 100%;
+    overflow: hidden;
+    display:block;
+    bottom: 0;
+    margin-top: 40px;
+}
+.mt-12 img{
+    width: 20%;
+    float: left;
+    margin-top: 0px;
+}
+
+.mt-userdetails{
+    margin-top: 12px;
+    float: left;
+    width: 80%;
+}
+.mt-userposts{
+    width: 50%;
+    height: 100vh;
+    border-right: solid rgba(207, 217, 222, 1) 1px;
+}
+.mt-12 p{
+    width: 80%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    float: left;
+    font-weight: 400;
+    margin-top: -20px;
+    color:rgb(83, 100, 113);
+}
+.mt-12 p:first-child{
+    width: 80%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    float: left;
+    margin-top: -10px;
+
+}
+
+.mt-userposts{
+    float: left;
+}
+
+.mt-heading h2{
+    font-size: 20px;
+    margin-left: 20px;
+
+    margin-top: 10px;
+}
+
+
+.mt-header{
+    width: 100%;
+    float: left;
+    margin-top: -20px;
+border-bottom: solid rgb(207, 217, 222) 1px;
+-webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: rgba(244, 247, 254, .2);
+    -webkit-filter: none;
+}
+.mt-header h2{
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0px;
+    line-height: 50px;
+    cursor: pointer;
+    margin-left: 120px;
+}
+
+.mt-header h2:first-child{
+    border-bottom: solid rgb(29, 155, 240) 4px;
+    width: 80px;
+    line-height: 50px;
+    border-radius: 2px;
+}
+.mt-header h2:nth-child(2){
+    color: rgb(83, 100, 113);
+}
+
+.fade.modal.show {
+    background: rgba(0, 0, 0, 0.4);
+    float: left;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 9999999;
+    height: 100%;
+}
+.modal-content {
+    background: white;
+    padding: 35px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+    border-radius: 11px;
+}
+
+.mt-user-create-post{
+    width: 100%;
+}
+
+.mt-user-create-post img{
+    width: 10%;
+    padding: 5px;
+    border-radius: 100%;
+    float: left;
+}
+.mt-user-create-post p{
+    width: 80%;
+    float: left;
+}
+
+.mt-writte-up{
+    width: 100%;
+    float: 20%;
+    margin-top: 30px;
+}
+.mt-writte-up textarea{
+    font-size: 18px;
+    border: none;
+    width: 80%;
+    margin-left: 0%;
+    height: 100px;
+    outline: none;
+}
+.mt-post-icons{
+    width: 80%;
+    float: left;
+    cursor: pointer;
+}
+.mt-post-icons img:nth-child(2){
+    margin-left: 10px;
+    cursor: pointer;
+}
+.mt-writte-up button{
+    background-color: rgb(29, 155, 240);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    width: 80px;
+    margin-top: -20px;
+}
+.mt-writte-up #disable {
+    background-color: rgb(29, 155, 240);
+    border: none;
+    opacity: 0.7;
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    width: 80px;
+    margin-top: -20px;
+}
+
+button#close{
+    background-color: transparent;
+    border: none;
+    margin-top: -30px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+
+.mt-ugc{
+    width: 100%;
+    float: left;
+}
+
+.mt-user-personal-details{
+    width: 94%;
+    float: left;
+    padding:20px ;
+}
+.mt-user-personal-image{
+    width: 10%;
+    float: left;
+}
+.mt-user-personal-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.mt-user-username{
+    width: 85%;
+    float: left;
+    padding-left: 0px;
+    margin-top: -15px;
+}
+.mt-user-username p:first-child{
+    font-weight: 700;
+}
+.mt-user-username p{
+    width:auto;
+    overflow: hidden;
+    margin-left: 1%;
+    float: left;
+    font-size: 14px;
+}
+.mt-user-post-details{
+    width: 100%;
+    float: left;
+    margin-top: -50px;
+}
+.mt-user-post-details p{
+    padding-left: 14%;
+}
+.mt-ugc{
+    overflow-y: scroll;
+    height: 80%;
+    padding-bottom: 400px;
+}
+.mt-user-post-details img{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 14%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 10px;
+}
+.mt-user-post{
+    width: 100%;
+    height: auto;
+    float: left;
+    transition: 0.4s;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid rgb(207, 217, 222) 0.1px;
+}
+.mt-user-post:hover {
+    background-color: rgba(207, 217, 222,0.4);
+
+}
+.mt-container {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.mt-rightmenu{
+    float:left;
+    width: 25%;
+    margin-left: 20px;
+
+}
+.mt-users{
+    width: 88%;
+    float: left;
+    padding: 20px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 10px;
+    margin-top: 40px;
+    height: auto;
+    max-height:270px ;
+    overflow-x: scroll;
+}
+.mt-users h1{
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: -10px;
+}
+#mt-no-post{
+    width: 100%;
+    float: left;
+    text-align: center;
+   margin-top: 100px;
+}
+#mt-mini-twitter-logo{
+    width: 50px;
+    margin-bottom: 10px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.mt-peroples{
+    width: 100%;
+    float: left;
+}
+.mt-peoples-profile{
+    width: 10%;
+    float: left;
+}
+
+.mt-peoples-profile img{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.mt-peoples-details {
+    width: 80%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 00px;
+
+}
+.mt-peoples-details p{
+ width: 100%;
+ float: left;
+ line-height: 20px;
+ font-size: 12px;
+ height: 0px;
+ margin-left: 5px;
+ margin-top: 5px;
+padding-left: 20px;
+}
+.mt-peoples-details img{
+    float: left;
+}
+.mt-peoples-details p:first-child {
+    color: black;
+    font-weight: 800;
+}
+
+.mt-peoples-profile button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: -40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.mt-username-badge{
+    width: 100%;
+    float: left;
+    margin-bottom: -5px;
+}
+.mt-username-badge p{
+    float: left;
+    width: auto;
+}
+.mt-username-badge img{
+    float: left;
+    margin-left: 5px;
+    width: 15px;
+    margin-top:7px;
+}
+#following{
+    margin-left: -60px;
+    background-color: transparent;
+    border: solid rgb(207, 217, 222) 1px;
+    color: black;
+}
+
